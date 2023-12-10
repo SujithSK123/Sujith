@@ -67,7 +67,7 @@
               die("Connection failed: " . $conn->connect_error);
             }
   
-            $sql = "SELECT id, username, phone_number, email, password FROM users";
+            $sql = "SELECT id, username, phone_number, email, password FROM register";
             $result = $conn->query($sql);
   
             if ($result->num_rows > 0) {
